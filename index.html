@@ -145,6 +145,33 @@ form textarea {
 form textarea {
   resize: vertical; /* permite aumentar só na altura */
 }
+
+  form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  min-height: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #121214;
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+form button:hover {
+  background: var(--link);
+  border-color: var(--link);
+  color: var(--linkHover);
+  transform: translateY(-1px);
+}
+
+form button:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
 </style>
 </head>
 
